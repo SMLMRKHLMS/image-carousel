@@ -11,4 +11,9 @@ const Image = ({
     style={{ backgroundImage: `url('${ src }')` }} />
 )
 
+Image.propTypes = {
+  className: React.PropTypes.string,
+  src: React.PropTypes.string
+}
+
 export default Image
