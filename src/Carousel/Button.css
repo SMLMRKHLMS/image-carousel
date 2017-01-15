@@ -1,0 +1,27 @@
+.carousel__button {
+  background-color: transparent;
+  border: 3px solid #FFF;
+  cursor: pointer;
+  margin: 0;
+  padding: 15px;
+  position: absolute;
+    top: 50%;
+    z-index: 10;
+  transform:
+    translateY(-50%)
+    rotate(45deg);
+}
+
+.carousel__button:focus { outline: none; }
+
+.carousel__button--prev {
+  border-right: none;
+  border-top: none;
+  left: 20px;
+}
+
+.carousel__button--next {
+  border-bottom: none;
+  border-left: none;
+  right: 20px;
+}

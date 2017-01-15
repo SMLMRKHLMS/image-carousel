@@ -1,0 +1,23 @@
+.carousel__slide {
+  position: absolute;
+    left: 0;
+    top: 0;
+  transition-property: transform;
+  transform: translate3d(-100%, 0, 0);
+  z-index: 0;
+  width: 100%;
+}
+
+.carousel__slide > * { padding-top: 50%; }
+
+.carousel__slide--active {
+  transform: translate3d(0, 0, 0) !important;
+  z-index: 1;
+}
+
+.carousel__slide--next ~ .carousel__slide:not(.carousel__slide--prev) { transform: translate3d(100%, 0, 0); }
+.carousel__slide--next { transform: translate3d(100%, 0, 0) !important; }
+.carousel__slide--prev { transform: translate3d(-100%, 0, 0); }
+
+.carousel--slide-left .carousel__slide--prev { z-index: 1; }
+.carousel--slide-right .carousel__slide--next { z-index: 1; }

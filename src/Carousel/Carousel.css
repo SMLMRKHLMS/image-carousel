@@ -1,0 +1,12 @@
+.carousel {
+  max-height: calc(100% - 50px);
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.carousel::after {
+  content: '';
+  display: block;
+  padding-top: 50%;
+}
